@@ -1,5 +1,6 @@
 package com.nummist.secondsight;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -7,12 +8,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images;
-import android.support.v7.app.ActionBarActivity;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-public final class LabActivity extends ActionBarActivity {
+public final class LabActivity extends Activity {
     
     public static final String PHOTO_FILE_EXTENSION = ".png";
     public static final String PHOTO_MIME_TYPE = "image/png";

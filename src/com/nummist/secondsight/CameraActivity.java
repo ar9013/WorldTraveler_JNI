@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.PixelFormat;
@@ -19,7 +20,6 @@ import android.hardware.Camera;
 import android.hardware.Camera.CameraInfo;
 import android.hardware.Camera.Parameters;
 import android.hardware.Camera.Size;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -58,7 +58,7 @@ import com.nummist.secondsight.filters.mixer.RecolorRGVFilter;
 
 // Use the deprecated Camera class.
 @SuppressWarnings("deprecation")
-public final class CameraActivity extends ActionBarActivity
+public final class CameraActivity extends Activity
         implements CvCameraViewListener2 {
     
     // A tag for log output.
